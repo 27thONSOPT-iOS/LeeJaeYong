@@ -14,6 +14,7 @@ class SignUpViewController: UIViewController {
 
      
     }
+    
     @IBAction func signUpPressed(_ sender: UIButton) {
         
         self.navigationController?.popViewController(animated: true)
