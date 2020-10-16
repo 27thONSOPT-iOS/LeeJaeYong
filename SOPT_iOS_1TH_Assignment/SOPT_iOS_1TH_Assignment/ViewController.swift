@@ -9,11 +9,23 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var partLabel: UILabel!
+    @IBOutlet weak var welcomeLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(login), name: .init("login"), object: nil)
     }
 
-
+    @objc func login(_ notification: Notification) {
+        
+        guard let info = notification.userInfo as? [String: Any] else { return }
+        let partText: String? = info["part"] as? String
+        let nameText: String? = info["name"] as? String
+        
+        partLabel.text = partText == "" ? "iOS" : partText
+        welcomeLabel.text = nameText == "" ? "이재용님 안녕하세요~!!" : nameText
+    }
 }
 

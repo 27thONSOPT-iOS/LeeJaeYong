@@ -16,15 +16,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="KakaoTalk_Photo_2020-10-02-20-28-55" translatesAutoresizingMaskIntoConstraints="NO" id="PUE-2t-UsI">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="KakaoTalk_Photo_2020-10-01-16-11-34" translatesAutoresizingMaskIntoConstraints="NO" id="PUE-2t-UsI">
                                 <rect key="frame" x="87.666666666666686" y="119" width="200" height="200"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="01b-CA-Ku3"/>
                                     <constraint firstAttribute="height" constant="200" id="k6x-Ac-VfW"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="이재용님 안녕하세요~" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Zp-eE-znt">
-                                <rect key="frame" x="92.666666666666671" y="425.33333333333331" width="189.66666666666663" height="26.333333333333314"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="이재용님 안녕하세요~!!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Zp-eE-znt">
+                                <rect key="frame" x="86.666666666666686" y="425.33333333333331" width="202" height="26.333333333333314"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -74,6 +74,10 @@
                             <constraint firstItem="RRn-Ue-glh" firstAttribute="top" secondItem="PUE-2t-UsI" secondAttribute="bottom" constant="40" id="wiK-Oi-uu9"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="partLabel" destination="muU-Ai-6KR" id="Ngj-MD-6TX"/>
+                        <outlet property="welcomeLabel" destination="4Zp-eE-znt" id="0Eu-Fg-gMy"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -167,6 +171,10 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Login" id="vrk-PQ-4tC"/>
+                    <connections>
+                        <outlet property="nameTextField" destination="I6W-rf-I8t" id="WZc-qC-7eq"/>
+                        <outlet property="partTextField" destination="I94-oy-xHr" id="Tg2-XH-36C"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ywl-wN-x7U" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -289,7 +297,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="KakaoTalk_Photo_2020-10-02-20-28-55" width="444" height="443"/>
+        <image name="KakaoTalk_Photo_2020-10-01-16-11-34" width="444" height="443"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
