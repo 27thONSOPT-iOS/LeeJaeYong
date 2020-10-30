@@ -1,0 +1,888 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SOPT_iOS_2ND_Assignment" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hnt-IT-orL">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="97"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="soptLogo" translatesAutoresizingMaskIntoConstraints="NO" id="JjB-Tl-E8e">
+                                        <rect key="frame" x="17" y="57" width="62" height="23"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JEl-O6-4FA">
+                                        <rect key="frame" x="267" y="53" width="132" height="32"/>
+                                        <color key="backgroundColor" name="marigold"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="32" id="cA0-4M-JfT"/>
+                                            <constraint firstAttribute="width" constant="132" id="f47-jv-QTm"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="NotoSansOriya-Bold" family="Noto Sans Oriya" pointSize="13"/>
+                                        <state key="normal" title="프로필 작성하기">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="JjB-Tl-E8e" secondAttribute="bottom" constant="17" id="6dJ-9p-YpW"/>
+                                    <constraint firstAttribute="trailing" secondItem="JEl-O6-4FA" secondAttribute="trailing" constant="15" id="VKR-in-aqs"/>
+                                    <constraint firstAttribute="width" secondItem="hnt-IT-orL" secondAttribute="height" multiplier="375:88" id="Zkv-4p-vXk"/>
+                                    <constraint firstAttribute="bottom" secondItem="JEl-O6-4FA" secondAttribute="bottom" constant="12" id="dgl-Tj-nif"/>
+                                    <constraint firstItem="JjB-Tl-E8e" firstAttribute="leading" secondItem="hnt-IT-orL" secondAttribute="leading" constant="17" id="koG-7f-K7H"/>
+                                </constraints>
+                            </view>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lEx-hK-VlY">
+                                <rect key="frame" x="0.0" y="97" width="414" height="799"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BV2-a8-aKa">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1533"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TYV-F0-Eu1">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="464"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="banner" translatesAutoresizingMaskIntoConstraints="NO" id="zZ5-wj-DrM">
+                                                        <rect key="frame" x="0.0" y="0.0" width="414" height="464"/>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SOPT + NETWORKING" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JbI-PD-1kW">
+                                                        <rect key="frame" x="72.5" y="213.5" width="269.5" height="37"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="37" id="xCt-Sg-TNL"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="NotoSansMyanmar-Bold" family="Noto Sans Myanmar" pointSize="25"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xsS-mu-EmW">
+                                                        <rect key="frame" x="72.5" y="250.5" width="269.5" height="3"/>
+                                                        <color key="backgroundColor" name="marigold"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="3" id="P4h-CC-CHv"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="대학생 연합 IT 창업 동아리의 네트워킹을 위한 플랫폼입니다." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zRH-6b-skT">
+                                                        <rect key="frame" x="88.5" y="253.5" width="237" height="22"/>
+                                                        <fontDescription key="fontDescription" name="NotoSansMyanmar-Regular" family="Noto Sans Myanmar" pointSize="10"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="zZ5-wj-DrM" firstAttribute="leading" secondItem="TYV-F0-Eu1" secondAttribute="leading" id="63R-Or-uZT"/>
+                                                    <constraint firstItem="JbI-PD-1kW" firstAttribute="trailing" secondItem="xsS-mu-EmW" secondAttribute="trailing" id="7gj-10-jC7"/>
+                                                    <constraint firstAttribute="width" secondItem="TYV-F0-Eu1" secondAttribute="height" multiplier="375:420" id="9hh-8O-A5S"/>
+                                                    <constraint firstItem="JbI-PD-1kW" firstAttribute="centerY" secondItem="TYV-F0-Eu1" secondAttribute="centerY" id="Adz-cT-PrU"/>
+                                                    <constraint firstItem="zRH-6b-skT" firstAttribute="top" secondItem="xsS-mu-EmW" secondAttribute="bottom" id="EWH-qQ-7ey"/>
+                                                    <constraint firstItem="JbI-PD-1kW" firstAttribute="leading" secondItem="xsS-mu-EmW" secondAttribute="leading" id="MA7-2s-dWJ"/>
+                                                    <constraint firstItem="xsS-mu-EmW" firstAttribute="top" secondItem="JbI-PD-1kW" secondAttribute="bottom" id="dNc-mB-DwE"/>
+                                                    <constraint firstAttribute="bottom" secondItem="zZ5-wj-DrM" secondAttribute="bottom" id="dd9-ry-6Jq"/>
+                                                    <constraint firstItem="zZ5-wj-DrM" firstAttribute="top" secondItem="TYV-F0-Eu1" secondAttribute="top" id="dgT-bh-SNV"/>
+                                                    <constraint firstAttribute="trailing" secondItem="zZ5-wj-DrM" secondAttribute="trailing" id="hnT-aW-x5l"/>
+                                                    <constraint firstItem="zRH-6b-skT" firstAttribute="centerX" secondItem="TYV-F0-Eu1" secondAttribute="centerX" id="pHL-sU-Q1Q"/>
+                                                    <constraint firstItem="JbI-PD-1kW" firstAttribute="centerX" secondItem="TYV-F0-Eu1" secondAttribute="centerX" id="sLC-Kf-289"/>
+                                                </constraints>
+                                            </view>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="KJl-5m-nvi">
+                                                <rect key="frame" x="24" y="504" width="366" height="1017"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="27" translatesAutoresizingMaskIntoConstraints="NO" id="uZR-40-LCX">
+                                                        <rect key="frame" x="0.0" y="0.0" width="366" height="254"/>
+                                                        <subviews>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tcC-my-SVF">
+                                                                <rect key="frame" x="0.0" y="0.0" width="169.5" height="254"/>
+                                                                <subviews>
+                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="juhyeok" translatesAutoresizingMaskIntoConstraints="NO" id="qIh-oL-Asp">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="169.5" height="169.5"/>
+                                                                    </imageView>
+                                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xhI-8H-Hir">
+                                                                        <rect key="frame" x="15" y="152.5" width="65" height="4"/>
+                                                                        <color key="backgroundColor" name="marigold"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="width" constant="65" id="Y3a-uJ-7pN"/>
+                                                                            <constraint firstAttribute="height" constant="4" id="klA-m9-t8J"/>
+                                                                        </constraints>
+                                                                    </view>
+                                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ov9-E7-mm0">
+                                                                        <rect key="frame" x="0.0" y="169.5" width="169.5" height="84.5"/>
+                                                                        <subviews>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sl8-Pk-w1L">
+                                                                                <rect key="frame" x="7" y="28.5" width="155.5" height="28"/>
+                                                                                <attributedString key="attributedText">
+                                                                                    <fragment content="#hereis#">
+                                                                                        <attributes>
+                                                                                            <font key="NSFont" size="11" name="LucidaGrande-Bold"/>
+                                                                                        </attributes>
+                                                                                    </fragment>
+                                                                                    <fragment content="아요#내꿈은">
+                                                                                        <attributes>
+                                                                                            <font key="NSFont" size="11" name="AppleSDGothicNeo-Bold"/>
+                                                                                        </attributes>
+                                                                                    </fragment>
+                                                                                    <fragment>
+                                                                                        <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                                                                        <attributes>
+                                                                                            <font key="NSFont" size="11" name="NotoSansMyanmar-Bold"/>
+                                                                                        </attributes>
+                                                                                    </fragment>
+                                                                                    <fragment content="#">
+                                                                                        <attributes>
+                                                                                            <font key="NSFont" size="11" name="LucidaGrande-Bold"/>
+                                                                                        </attributes>
+                                                                                    </fragment>
+                                                                                    <fragment content="사과농장#ENFP">
+                                                                                        <attributes>
+                                                                                            <font key="NSFont" size="11" name="AppleSDGothicNeo-Bold"/>
+                                                                                        </attributes>
+                                                                                    </fragment>
+                                                                                </attributedString>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                        </subviews>
+                                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="bottom" secondItem="sl8-Pk-w1L" secondAttribute="bottom" constant="28" id="75d-dD-F8K"/>
+                                                                            <constraint firstItem="sl8-Pk-w1L" firstAttribute="centerX" secondItem="Ov9-E7-mm0" secondAttribute="centerX" id="Mc8-E3-0Xy"/>
+                                                                            <constraint firstItem="sl8-Pk-w1L" firstAttribute="leading" secondItem="Ov9-E7-mm0" secondAttribute="leading" constant="7" id="dET-XH-0xj"/>
+                                                                        </constraints>
+                                                                    </view>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="이주혁" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HGg-xy-J6D">
+                                                                        <rect key="frame" x="15" y="134.5" width="31.5" height="18"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="height" constant="18" id="o9K-Dt-zsK"/>
+                                                                        </constraints>
+                                                                        <fontDescription key="fontDescription" name="NotoSansMyanmar-Bold" family="Noto Sans Myanmar" pointSize="12"/>
+                                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                                <constraints>
+                                                                    <constraint firstItem="xhI-8H-Hir" firstAttribute="top" secondItem="HGg-xy-J6D" secondAttribute="bottom" id="8ao-ih-qln"/>
+                                                                    <constraint firstItem="HGg-xy-J6D" firstAttribute="leading" secondItem="xhI-8H-Hir" secondAttribute="leading" id="AAe-mJ-w6Q"/>
+                                                                    <constraint firstItem="Ov9-E7-mm0" firstAttribute="leading" secondItem="tcC-my-SVF" secondAttribute="leading" id="APE-Mh-R4U"/>
+                                                                    <constraint firstItem="Ov9-E7-mm0" firstAttribute="top" secondItem="HGg-xy-J6D" secondAttribute="bottom" constant="17" id="BOz-Qa-m1K"/>
+                                                                    <constraint firstAttribute="width" secondItem="tcC-my-SVF" secondAttribute="height" multiplier="2:3" id="DaJ-Hk-9xE"/>
+                                                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="HGg-xy-J6D" secondAttribute="trailing" constant="20" symbolic="YES" id="GfT-0Q-wJB"/>
+                                                                    <constraint firstAttribute="trailing" secondItem="qIh-oL-Asp" secondAttribute="trailing" id="JXK-NZ-Sgh"/>
+                                                                    <constraint firstItem="Ov9-E7-mm0" firstAttribute="top" secondItem="qIh-oL-Asp" secondAttribute="bottom" id="YCK-b7-j56"/>
+                                                                    <constraint firstItem="qIh-oL-Asp" firstAttribute="top" secondItem="tcC-my-SVF" secondAttribute="top" id="b56-Xd-aaM"/>
+                                                                    <constraint firstAttribute="trailing" secondItem="Ov9-E7-mm0" secondAttribute="trailing" id="gqV-cH-LhZ"/>
+                                                                    <constraint firstItem="qIh-oL-Asp" firstAttribute="leading" secondItem="tcC-my-SVF" secondAttribute="leading" id="kOg-Zw-AAi"/>
+                                                                    <constraint firstAttribute="bottom" secondItem="Ov9-E7-mm0" secondAttribute="bottom" id="o0b-Rn-08r"/>
+                                                                    <constraint firstItem="qIh-oL-Asp" firstAttribute="height" secondItem="Ov9-E7-mm0" secondAttribute="height" multiplier="2:1" id="oA0-HE-4lf"/>
+                                                                    <constraint firstItem="HGg-xy-J6D" firstAttribute="leading" secondItem="tcC-my-SVF" secondAttribute="leading" constant="15" id="vbO-u7-9hh"/>
+                                                                </constraints>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R8a-CN-Qf4">
+                                                                <rect key="frame" x="196.5" y="0.0" width="169.5" height="254"/>
+                                                                <subviews>
+                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="juhyeok" translatesAutoresizingMaskIntoConstraints="NO" id="z61-gW-gXi">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="169.5" height="169.5"/>
+                                                                    </imageView>
+                                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ngt-VU-CNc">
+                                                                        <rect key="frame" x="15" y="152.5" width="65" height="4"/>
+                                                                        <color key="backgroundColor" name="marigold"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="width" constant="65" id="Gqy-sI-Ieo"/>
+                                                                            <constraint firstAttribute="height" constant="4" id="QjX-pl-aHY"/>
+                                                                        </constraints>
+                                                                    </view>
+                                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s3d-GA-5BR">
+                                                                        <rect key="frame" x="0.0" y="169.5" width="169.5" height="84.5"/>
+                                                                        <subviews>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zpQ-mQ-yPG">
+                                                                                <rect key="frame" x="7" y="28.5" width="155.5" height="28"/>
+                                                                                <attributedString key="attributedText">
+                                                                                    <fragment content="#hereis#">
+                                                                                        <attributes>
+                                                                                            <font key="NSFont" size="11" name="LucidaGrande-Bold"/>
+                                                                                        </attributes>
+                                                                                    </fragment>
+                                                                                    <fragment content="아요#내꿈은">
+                                                                                        <attributes>
+                                                                                            <font key="NSFont" size="11" name="AppleSDGothicNeo-Bold"/>
+                                                                                        </attributes>
+                                                                                    </fragment>
+                                                                                    <fragment>
+                                                                                        <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                                                                        <attributes>
+                                                                                            <font key="NSFont" size="11" name="NotoSansMyanmar-Bold"/>
+                                                                                        </attributes>
+                                                                                    </fragment>
+                                                                                    <fragment content="#">
+                                                                                        <attributes>
+                                                                                            <font key="NSFont" size="11" name="LucidaGrande-Bold"/>
+                                                                                        </attributes>
+                                                                                    </fragment>
+                                                                                    <fragment content="사과농장#ENFP">
+                                                                                        <attributes>
+                                                                                            <font key="NSFont" size="11" name="AppleSDGothicNeo-Bold"/>
+                                                                                        </attributes>
+                                                                                    </fragment>
+                                                                                </attributedString>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                        </subviews>
+                                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                                        <constraints>
+                                                                            <constraint firstItem="zpQ-mQ-yPG" firstAttribute="centerX" secondItem="s3d-GA-5BR" secondAttribute="centerX" id="8de-Mb-5UM"/>
+                                                                            <constraint firstItem="zpQ-mQ-yPG" firstAttribute="leading" secondItem="s3d-GA-5BR" secondAttribute="leading" constant="7" id="Gia-3f-rcw"/>
+                                                                            <constraint firstAttribute="bottom" secondItem="zpQ-mQ-yPG" secondAttribute="bottom" constant="28" id="epS-on-qpn"/>
+                                                                        </constraints>
+                                                                    </view>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="이주혁" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JEL-OJ-ExP">
+                                                                        <rect key="frame" x="15" y="134.5" width="31.5" height="18"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="height" constant="18" id="gsY-I9-QxK"/>
+                                                                        </constraints>
+                                                                        <fontDescription key="fontDescription" name="NotoSansMyanmar-Bold" family="Noto Sans Myanmar" pointSize="12"/>
+                                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                                <constraints>
+                                                                    <constraint firstItem="z61-gW-gXi" firstAttribute="height" secondItem="s3d-GA-5BR" secondAttribute="height" multiplier="2:1" id="1OE-Nz-uCS"/>
+                                                                    <constraint firstItem="z61-gW-gXi" firstAttribute="leading" secondItem="R8a-CN-Qf4" secondAttribute="leading" id="7gQ-tr-sbd"/>
+                                                                    <constraint firstItem="JEL-OJ-ExP" firstAttribute="leading" secondItem="R8a-CN-Qf4" secondAttribute="leading" constant="15" id="DMH-y6-fwI"/>
+                                                                    <constraint firstItem="z61-gW-gXi" firstAttribute="top" secondItem="R8a-CN-Qf4" secondAttribute="top" id="Dn3-vU-ja4"/>
+                                                                    <constraint firstItem="s3d-GA-5BR" firstAttribute="leading" secondItem="R8a-CN-Qf4" secondAttribute="leading" id="EEK-Ux-Mtu"/>
+                                                                    <constraint firstAttribute="trailing" secondItem="z61-gW-gXi" secondAttribute="trailing" id="I5m-F7-EOF"/>
+                                                                    <constraint firstAttribute="trailing" secondItem="s3d-GA-5BR" secondAttribute="trailing" id="Kn1-8Q-MnF"/>
+                                                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="JEL-OJ-ExP" secondAttribute="trailing" constant="20" symbolic="YES" id="Kp0-Pa-KZn"/>
+                                                                    <constraint firstAttribute="bottom" secondItem="s3d-GA-5BR" secondAttribute="bottom" id="MrK-R0-Kl6"/>
+                                                                    <constraint firstAttribute="width" secondItem="R8a-CN-Qf4" secondAttribute="height" multiplier="2:3" id="RW6-zz-N3C"/>
+                                                                    <constraint firstItem="JEL-OJ-ExP" firstAttribute="leading" secondItem="ngt-VU-CNc" secondAttribute="leading" id="cYX-NY-0VJ"/>
+                                                                    <constraint firstItem="s3d-GA-5BR" firstAttribute="top" secondItem="JEL-OJ-ExP" secondAttribute="bottom" constant="17" id="j2G-9j-1yL"/>
+                                                                    <constraint firstItem="ngt-VU-CNc" firstAttribute="top" secondItem="JEL-OJ-ExP" secondAttribute="bottom" id="kEU-OI-iuv"/>
+                                                                    <constraint firstItem="s3d-GA-5BR" firstAttribute="top" secondItem="z61-gW-gXi" secondAttribute="bottom" id="q2j-YL-NXf"/>
+                                                                </constraints>
+                                                            </view>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="27" translatesAutoresizingMaskIntoConstraints="NO" id="Xqt-x6-2nn">
+                                                        <rect key="frame" x="0.0" y="254" width="366" height="254.5"/>
+                                                        <subviews>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cw0-bH-s10">
+                                                                <rect key="frame" x="0.0" y="0.0" width="169.5" height="254.5"/>
+                                                                <subviews>
+                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="juhyeok" translatesAutoresizingMaskIntoConstraints="NO" id="oz3-wO-NQG">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="169.5" height="169.5"/>
+                                                                    </imageView>
+                                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Ft-RK-HYA">
+                                                                        <rect key="frame" x="15" y="152.5" width="65" height="4"/>
+                                                                        <color key="backgroundColor" name="marigold"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="width" constant="65" id="Jxm-74-CYT"/>
+                                                                            <constraint firstAttribute="height" constant="4" id="NGJ-Zq-muH"/>
+                                                                        </constraints>
+                                                                    </view>
+                                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HQO-iO-iG0">
+                                                                        <rect key="frame" x="0.0" y="169.5" width="169.5" height="85"/>
+                                                                        <subviews>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NXY-8u-Dth">
+                                                                                <rect key="frame" x="7" y="29" width="155.5" height="28"/>
+                                                                                <attributedString key="attributedText">
+                                                                                    <fragment content="#hereis#">
+                                                                                        <attributes>
+                                                                                            <font key="NSFont" size="11" name="LucidaGrande-Bold"/>
+                                                                                        </attributes>
+                                                                                    </fragment>
+                                                                                    <fragment content="아요#내꿈은">
+                                                                                        <attributes>
+                                                                                            <font key="NSFont" size="11" name="AppleSDGothicNeo-Bold"/>
+                                                                                        </attributes>
+                                                                                    </fragment>
+                                                                                    <fragment>
+                                                                                        <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                                                                        <attributes>
+                                                                                            <font key="NSFont" size="11" name="NotoSansMyanmar-Bold"/>
+                                                                                        </attributes>
+                                                                                    </fragment>
+                                                                                    <fragment content="#">
+                                                                                        <attributes>
+                                                                                            <font key="NSFont" size="11" name="LucidaGrande-Bold"/>
+                                                                                        </attributes>
+                                                                                    </fragment>
+                                                                                    <fragment content="사과농장#ENFP">
+                                                                                        <attributes>
+                                                                                            <font key="NSFont" size="11" name="AppleSDGothicNeo-Bold"/>
+                                                                                        </attributes>
+                                                                                    </fragment>
+                                                                                </attributedString>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                        </subviews>
+                                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                                        <constraints>
+                                                                            <constraint firstItem="NXY-8u-Dth" firstAttribute="leading" secondItem="HQO-iO-iG0" secondAttribute="leading" constant="7" id="9eW-S3-1Ep"/>
+                                                                            <constraint firstAttribute="bottom" secondItem="NXY-8u-Dth" secondAttribute="bottom" constant="28" id="LOQ-Uc-vb5"/>
+                                                                            <constraint firstItem="NXY-8u-Dth" firstAttribute="centerX" secondItem="HQO-iO-iG0" secondAttribute="centerX" id="RXc-d5-OoZ"/>
+                                                                        </constraints>
+                                                                    </view>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="이주혁" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aiA-yx-d7A">
+                                                                        <rect key="frame" x="15" y="134.5" width="31.5" height="18"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="height" constant="18" id="1de-JE-Htg"/>
+                                                                        </constraints>
+                                                                        <fontDescription key="fontDescription" name="NotoSansMyanmar-Bold" family="Noto Sans Myanmar" pointSize="12"/>
+                                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                                <constraints>
+                                                                    <constraint firstItem="HQO-iO-iG0" firstAttribute="top" secondItem="aiA-yx-d7A" secondAttribute="bottom" constant="17" id="6kg-E9-bx1"/>
+                                                                    <constraint firstItem="HQO-iO-iG0" firstAttribute="leading" secondItem="cw0-bH-s10" secondAttribute="leading" id="6ts-kH-lM4"/>
+                                                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="aiA-yx-d7A" secondAttribute="trailing" constant="20" symbolic="YES" id="ABf-1D-Jwa"/>
+                                                                    <constraint firstAttribute="bottom" secondItem="HQO-iO-iG0" secondAttribute="bottom" id="AuS-s3-AHo"/>
+                                                                    <constraint firstItem="oz3-wO-NQG" firstAttribute="top" secondItem="cw0-bH-s10" secondAttribute="top" id="FCT-wp-Qog"/>
+                                                                    <constraint firstItem="HQO-iO-iG0" firstAttribute="top" secondItem="oz3-wO-NQG" secondAttribute="bottom" id="InT-Xw-KfY"/>
+                                                                    <constraint firstItem="5Ft-RK-HYA" firstAttribute="top" secondItem="aiA-yx-d7A" secondAttribute="bottom" id="Zol-xV-Ukr"/>
+                                                                    <constraint firstItem="aiA-yx-d7A" firstAttribute="leading" secondItem="5Ft-RK-HYA" secondAttribute="leading" id="aIa-Pt-Vgu"/>
+                                                                    <constraint firstAttribute="trailing" secondItem="HQO-iO-iG0" secondAttribute="trailing" id="bDs-nf-fUy"/>
+                                                                    <constraint firstItem="oz3-wO-NQG" firstAttribute="leading" secondItem="cw0-bH-s10" secondAttribute="leading" id="hMq-4M-sLd"/>
+                                                                    <constraint firstItem="aiA-yx-d7A" firstAttribute="leading" secondItem="cw0-bH-s10" secondAttribute="leading" constant="15" id="jRT-jn-naT"/>
+                                                                    <constraint firstItem="oz3-wO-NQG" firstAttribute="height" secondItem="HQO-iO-iG0" secondAttribute="height" multiplier="2:1" id="pkm-4J-EgZ"/>
+                                                                    <constraint firstAttribute="trailing" secondItem="oz3-wO-NQG" secondAttribute="trailing" id="uim-Ll-hT6"/>
+                                                                </constraints>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yTB-Eb-tuk">
+                                                                <rect key="frame" x="196.5" y="0.0" width="169.5" height="254.5"/>
+                                                                <subviews>
+                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="juhyeok" translatesAutoresizingMaskIntoConstraints="NO" id="aNN-Ow-qsI">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="169.5" height="169.5"/>
+                                                                    </imageView>
+                                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="J4B-1k-Ibo">
+                                                                        <rect key="frame" x="15" y="152.5" width="65" height="4"/>
+                                                                        <color key="backgroundColor" name="marigold"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="width" constant="65" id="b1k-4f-A12"/>
+                                                                            <constraint firstAttribute="height" constant="4" id="x6R-ti-Qel"/>
+                                                                        </constraints>
+                                                                    </view>
+                                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xwf-ff-D0s">
+                                                                        <rect key="frame" x="0.0" y="169.5" width="169.5" height="85"/>
+                                                                        <subviews>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="peA-xb-GA6">
+                                                                                <rect key="frame" x="7" y="29" width="155.5" height="28"/>
+                                                                                <attributedString key="attributedText">
+                                                                                    <fragment content="#hereis#">
+                                                                                        <attributes>
+                                                                                            <font key="NSFont" size="11" name="LucidaGrande-Bold"/>
+                                                                                        </attributes>
+                                                                                    </fragment>
+                                                                                    <fragment content="아요#내꿈은">
+                                                                                        <attributes>
+                                                                                            <font key="NSFont" size="11" name="AppleSDGothicNeo-Bold"/>
+                                                                                        </attributes>
+                                                                                    </fragment>
+                                                                                    <fragment>
+                                                                                        <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                                                                        <attributes>
+                                                                                            <font key="NSFont" size="11" name="NotoSansMyanmar-Bold"/>
+                                                                                        </attributes>
+                                                                                    </fragment>
+                                                                                    <fragment content="#">
+                                                                                        <attributes>
+                                                                                            <font key="NSFont" size="11" name="LucidaGrande-Bold"/>
+                                                                                        </attributes>
+                                                                                    </fragment>
+                                                                                    <fragment content="사과농장#ENFP">
+                                                                                        <attributes>
+                                                                                            <font key="NSFont" size="11" name="AppleSDGothicNeo-Bold"/>
+                                                                                        </attributes>
+                                                                                    </fragment>
+                                                                                </attributedString>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                        </subviews>
+                                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                                        <constraints>
+                                                                            <constraint firstItem="peA-xb-GA6" firstAttribute="centerX" secondItem="xwf-ff-D0s" secondAttribute="centerX" id="i3N-7s-Ysg"/>
+                                                                            <constraint firstItem="peA-xb-GA6" firstAttribute="leading" secondItem="xwf-ff-D0s" secondAttribute="leading" constant="7" id="nmZ-NO-sas"/>
+                                                                            <constraint firstAttribute="bottom" secondItem="peA-xb-GA6" secondAttribute="bottom" constant="28" id="olW-Uy-qFa"/>
+                                                                        </constraints>
+                                                                    </view>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="이주혁" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eVa-ZS-LXs">
+                                                                        <rect key="frame" x="15" y="134.5" width="31.5" height="18"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="height" constant="18" id="mc3-yd-75i"/>
+                                                                        </constraints>
+                                                                        <fontDescription key="fontDescription" name="NotoSansMyanmar-Bold" family="Noto Sans Myanmar" pointSize="12"/>
+                                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                                <constraints>
+                                                                    <constraint firstItem="xwf-ff-D0s" firstAttribute="top" secondItem="eVa-ZS-LXs" secondAttribute="bottom" constant="17" id="2Yc-7Q-cKq"/>
+                                                                    <constraint firstItem="eVa-ZS-LXs" firstAttribute="leading" secondItem="J4B-1k-Ibo" secondAttribute="leading" id="5HQ-HJ-T5d"/>
+                                                                    <constraint firstAttribute="trailing" secondItem="xwf-ff-D0s" secondAttribute="trailing" id="8kM-7b-gZV"/>
+                                                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="eVa-ZS-LXs" secondAttribute="trailing" constant="20" symbolic="YES" id="ACT-OP-nZP"/>
+                                                                    <constraint firstItem="xwf-ff-D0s" firstAttribute="leading" secondItem="yTB-Eb-tuk" secondAttribute="leading" id="Ab7-3H-Mmq"/>
+                                                                    <constraint firstItem="aNN-Ow-qsI" firstAttribute="height" secondItem="xwf-ff-D0s" secondAttribute="height" multiplier="2:1" id="BIS-GZ-LBn"/>
+                                                                    <constraint firstAttribute="bottom" secondItem="xwf-ff-D0s" secondAttribute="bottom" id="Gd2-QC-E0T"/>
+                                                                    <constraint firstItem="xwf-ff-D0s" firstAttribute="top" secondItem="aNN-Ow-qsI" secondAttribute="bottom" id="Uyb-7E-Ogt"/>
+                                                                    <constraint firstItem="aNN-Ow-qsI" firstAttribute="top" secondItem="yTB-Eb-tuk" secondAttribute="top" id="gop-7o-Yxw"/>
+                                                                    <constraint firstItem="aNN-Ow-qsI" firstAttribute="leading" secondItem="yTB-Eb-tuk" secondAttribute="leading" id="sWm-Sk-6Ch"/>
+                                                                    <constraint firstItem="J4B-1k-Ibo" firstAttribute="top" secondItem="eVa-ZS-LXs" secondAttribute="bottom" id="vho-YQ-uDj"/>
+                                                                    <constraint firstAttribute="trailing" secondItem="aNN-Ow-qsI" secondAttribute="trailing" id="vxa-uP-AQ8"/>
+                                                                    <constraint firstItem="eVa-ZS-LXs" firstAttribute="leading" secondItem="yTB-Eb-tuk" secondAttribute="leading" constant="15" id="yla-l5-SoB"/>
+                                                                </constraints>
+                                                            </view>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="27" translatesAutoresizingMaskIntoConstraints="NO" id="BI6-nu-4eB">
+                                                        <rect key="frame" x="0.0" y="508.5" width="366" height="254"/>
+                                                        <subviews>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s2d-Jc-MTD">
+                                                                <rect key="frame" x="0.0" y="0.0" width="169.5" height="254"/>
+                                                                <subviews>
+                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="juhyeok" translatesAutoresizingMaskIntoConstraints="NO" id="AJM-9x-rBY">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="169.5" height="169.5"/>
+                                                                    </imageView>
+                                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YKT-tt-eE5">
+                                                                        <rect key="frame" x="15" y="152.5" width="65" height="4"/>
+                                                                        <color key="backgroundColor" name="marigold"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="width" constant="65" id="Tp6-pZ-zps"/>
+                                                                            <constraint firstAttribute="height" constant="4" id="Xxp-VE-MQz"/>
+                                                                        </constraints>
+                                                                    </view>
+                                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HDh-zC-rnS">
+                                                                        <rect key="frame" x="0.0" y="169.5" width="169.5" height="84.5"/>
+                                                                        <subviews>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="skx-lJ-jTY">
+                                                                                <rect key="frame" x="7" y="28.5" width="155.5" height="28"/>
+                                                                                <attributedString key="attributedText">
+                                                                                    <fragment content="#hereis#">
+                                                                                        <attributes>
+                                                                                            <font key="NSFont" size="11" name="LucidaGrande-Bold"/>
+                                                                                        </attributes>
+                                                                                    </fragment>
+                                                                                    <fragment content="아요#내꿈은">
+                                                                                        <attributes>
+                                                                                            <font key="NSFont" size="11" name="AppleSDGothicNeo-Bold"/>
+                                                                                        </attributes>
+                                                                                    </fragment>
+                                                                                    <fragment>
+                                                                                        <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                                                                        <attributes>
+                                                                                            <font key="NSFont" size="11" name="NotoSansMyanmar-Bold"/>
+                                                                                        </attributes>
+                                                                                    </fragment>
+                                                                                    <fragment content="#">
+                                                                                        <attributes>
+                                                                                            <font key="NSFont" size="11" name="LucidaGrande-Bold"/>
+                                                                                        </attributes>
+                                                                                    </fragment>
+                                                                                    <fragment content="사과농장#ENFP">
+                                                                                        <attributes>
+                                                                                            <font key="NSFont" size="11" name="AppleSDGothicNeo-Bold"/>
+                                                                                        </attributes>
+                                                                                    </fragment>
+                                                                                </attributedString>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                        </subviews>
+                                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                                        <constraints>
+                                                                            <constraint firstItem="skx-lJ-jTY" firstAttribute="leading" secondItem="HDh-zC-rnS" secondAttribute="leading" constant="7" id="iTu-5N-ml5"/>
+                                                                            <constraint firstItem="skx-lJ-jTY" firstAttribute="centerX" secondItem="HDh-zC-rnS" secondAttribute="centerX" id="jYU-RV-cyv"/>
+                                                                            <constraint firstAttribute="bottom" secondItem="skx-lJ-jTY" secondAttribute="bottom" constant="28" id="py4-ZW-ooX"/>
+                                                                        </constraints>
+                                                                    </view>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="이주혁" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lTm-JW-biT">
+                                                                        <rect key="frame" x="15" y="134.5" width="31.5" height="18"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="height" constant="18" id="UGS-qO-Tgi"/>
+                                                                        </constraints>
+                                                                        <fontDescription key="fontDescription" name="NotoSansMyanmar-Bold" family="Noto Sans Myanmar" pointSize="12"/>
+                                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                                <constraints>
+                                                                    <constraint firstItem="HDh-zC-rnS" firstAttribute="leading" secondItem="s2d-Jc-MTD" secondAttribute="leading" id="1Ob-Q3-5Jj"/>
+                                                                    <constraint firstItem="AJM-9x-rBY" firstAttribute="leading" secondItem="s2d-Jc-MTD" secondAttribute="leading" id="1np-mT-evs"/>
+                                                                    <constraint firstItem="HDh-zC-rnS" firstAttribute="top" secondItem="AJM-9x-rBY" secondAttribute="bottom" id="5Td-lW-9BM"/>
+                                                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="lTm-JW-biT" secondAttribute="trailing" constant="20" symbolic="YES" id="6we-zK-6sn"/>
+                                                                    <constraint firstItem="lTm-JW-biT" firstAttribute="leading" secondItem="s2d-Jc-MTD" secondAttribute="leading" constant="15" id="9KE-dh-Hqh"/>
+                                                                    <constraint firstAttribute="bottom" secondItem="HDh-zC-rnS" secondAttribute="bottom" id="A2c-TX-C4d"/>
+                                                                    <constraint firstItem="AJM-9x-rBY" firstAttribute="top" secondItem="s2d-Jc-MTD" secondAttribute="top" id="Gaw-ea-2Z2"/>
+                                                                    <constraint firstAttribute="trailing" secondItem="HDh-zC-rnS" secondAttribute="trailing" id="YyY-OW-SaL"/>
+                                                                    <constraint firstItem="HDh-zC-rnS" firstAttribute="top" secondItem="lTm-JW-biT" secondAttribute="bottom" constant="17" id="Zmz-q8-Azw"/>
+                                                                    <constraint firstItem="AJM-9x-rBY" firstAttribute="height" secondItem="HDh-zC-rnS" secondAttribute="height" multiplier="2:1" id="amk-K6-wdS"/>
+                                                                    <constraint firstAttribute="trailing" secondItem="AJM-9x-rBY" secondAttribute="trailing" id="cAj-2E-1Cd"/>
+                                                                    <constraint firstItem="lTm-JW-biT" firstAttribute="leading" secondItem="YKT-tt-eE5" secondAttribute="leading" id="gxk-Jm-au5"/>
+                                                                    <constraint firstItem="YKT-tt-eE5" firstAttribute="top" secondItem="lTm-JW-biT" secondAttribute="bottom" id="hIY-Iq-J5a"/>
+                                                                </constraints>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Esg-U1-Zlc">
+                                                                <rect key="frame" x="196.5" y="0.0" width="169.5" height="254"/>
+                                                                <subviews>
+                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="juhyeok" translatesAutoresizingMaskIntoConstraints="NO" id="Bec-my-55U">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="169.5" height="169.5"/>
+                                                                    </imageView>
+                                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GnA-vY-MSl">
+                                                                        <rect key="frame" x="15" y="152.5" width="65" height="4"/>
+                                                                        <color key="backgroundColor" name="marigold"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="width" constant="65" id="42P-zc-yDN"/>
+                                                                            <constraint firstAttribute="height" constant="4" id="sMC-hn-o46"/>
+                                                                        </constraints>
+                                                                    </view>
+                                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EdK-Zh-pKs">
+                                                                        <rect key="frame" x="0.0" y="169.5" width="169.5" height="84.5"/>
+                                                                        <subviews>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cTd-Yw-xhu">
+                                                                                <rect key="frame" x="7" y="28.5" width="155.5" height="28"/>
+                                                                                <attributedString key="attributedText">
+                                                                                    <fragment content="#hereis#">
+                                                                                        <attributes>
+                                                                                            <font key="NSFont" size="11" name="LucidaGrande-Bold"/>
+                                                                                        </attributes>
+                                                                                    </fragment>
+                                                                                    <fragment content="아요#내꿈은">
+                                                                                        <attributes>
+                                                                                            <font key="NSFont" size="11" name="AppleSDGothicNeo-Bold"/>
+                                                                                        </attributes>
+                                                                                    </fragment>
+                                                                                    <fragment>
+                                                                                        <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                                                                        <attributes>
+                                                                                            <font key="NSFont" size="11" name="NotoSansMyanmar-Bold"/>
+                                                                                        </attributes>
+                                                                                    </fragment>
+                                                                                    <fragment content="#">
+                                                                                        <attributes>
+                                                                                            <font key="NSFont" size="11" name="LucidaGrande-Bold"/>
+                                                                                        </attributes>
+                                                                                    </fragment>
+                                                                                    <fragment content="사과농장#ENFP">
+                                                                                        <attributes>
+                                                                                            <font key="NSFont" size="11" name="AppleSDGothicNeo-Bold"/>
+                                                                                        </attributes>
+                                                                                    </fragment>
+                                                                                </attributedString>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                        </subviews>
+                                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="bottom" secondItem="cTd-Yw-xhu" secondAttribute="bottom" constant="28" id="7d1-au-bEw"/>
+                                                                            <constraint firstItem="cTd-Yw-xhu" firstAttribute="centerX" secondItem="EdK-Zh-pKs" secondAttribute="centerX" id="Ec4-qf-qhg"/>
+                                                                            <constraint firstItem="cTd-Yw-xhu" firstAttribute="leading" secondItem="EdK-Zh-pKs" secondAttribute="leading" constant="7" id="mcv-pn-1Kj"/>
+                                                                        </constraints>
+                                                                    </view>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="이주혁" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PTE-pr-noQ">
+                                                                        <rect key="frame" x="15" y="134.5" width="31.5" height="18"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="height" constant="18" id="ugx-BM-WDz"/>
+                                                                        </constraints>
+                                                                        <fontDescription key="fontDescription" name="NotoSansMyanmar-Bold" family="Noto Sans Myanmar" pointSize="12"/>
+                                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                                <constraints>
+                                                                    <constraint firstItem="PTE-pr-noQ" firstAttribute="leading" secondItem="Esg-U1-Zlc" secondAttribute="leading" constant="15" id="GvY-TE-kvd"/>
+                                                                    <constraint firstItem="GnA-vY-MSl" firstAttribute="top" secondItem="PTE-pr-noQ" secondAttribute="bottom" id="Iig-2Z-gsM"/>
+                                                                    <constraint firstItem="EdK-Zh-pKs" firstAttribute="leading" secondItem="Esg-U1-Zlc" secondAttribute="leading" id="TzB-4V-1vl"/>
+                                                                    <constraint firstAttribute="trailing" secondItem="Bec-my-55U" secondAttribute="trailing" id="UwE-Rj-gAu"/>
+                                                                    <constraint firstItem="Bec-my-55U" firstAttribute="height" secondItem="EdK-Zh-pKs" secondAttribute="height" multiplier="2:1" id="VpB-kx-jeS"/>
+                                                                    <constraint firstItem="EdK-Zh-pKs" firstAttribute="top" secondItem="PTE-pr-noQ" secondAttribute="bottom" constant="17" id="e3p-2j-OSe"/>
+                                                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="PTE-pr-noQ" secondAttribute="trailing" constant="20" symbolic="YES" id="gRT-dJ-hTx"/>
+                                                                    <constraint firstItem="Bec-my-55U" firstAttribute="top" secondItem="Esg-U1-Zlc" secondAttribute="top" id="hbh-YX-azM"/>
+                                                                    <constraint firstAttribute="bottom" secondItem="EdK-Zh-pKs" secondAttribute="bottom" id="jX6-WO-A5e"/>
+                                                                    <constraint firstItem="PTE-pr-noQ" firstAttribute="leading" secondItem="GnA-vY-MSl" secondAttribute="leading" id="mYM-QI-btW"/>
+                                                                    <constraint firstItem="Bec-my-55U" firstAttribute="leading" secondItem="Esg-U1-Zlc" secondAttribute="leading" id="rtU-5g-vUo"/>
+                                                                    <constraint firstAttribute="trailing" secondItem="EdK-Zh-pKs" secondAttribute="trailing" id="sOd-br-aMD"/>
+                                                                    <constraint firstItem="EdK-Zh-pKs" firstAttribute="top" secondItem="Bec-my-55U" secondAttribute="bottom" id="vzR-9E-lQh"/>
+                                                                </constraints>
+                                                            </view>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="27" translatesAutoresizingMaskIntoConstraints="NO" id="A7K-3P-Jvk">
+                                                        <rect key="frame" x="0.0" y="762.5" width="366" height="254.5"/>
+                                                        <subviews>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GrR-F6-c2u">
+                                                                <rect key="frame" x="0.0" y="0.0" width="169.5" height="254.5"/>
+                                                                <subviews>
+                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="juhyeok" translatesAutoresizingMaskIntoConstraints="NO" id="tHt-Q6-BgL">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="169.5" height="169.5"/>
+                                                                    </imageView>
+                                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pIS-7a-6Hn">
+                                                                        <rect key="frame" x="15" y="152.5" width="65" height="4"/>
+                                                                        <color key="backgroundColor" name="marigold"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="width" constant="65" id="byp-aM-nlI"/>
+                                                                            <constraint firstAttribute="height" constant="4" id="kBL-Tg-mLP"/>
+                                                                        </constraints>
+                                                                    </view>
+                                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q0F-0W-ABO">
+                                                                        <rect key="frame" x="0.0" y="169.5" width="169.5" height="85"/>
+                                                                        <subviews>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="41h-IQ-mr0">
+                                                                                <rect key="frame" x="7" y="29" width="155.5" height="28"/>
+                                                                                <attributedString key="attributedText">
+                                                                                    <fragment content="#hereis#">
+                                                                                        <attributes>
+                                                                                            <font key="NSFont" size="11" name="LucidaGrande-Bold"/>
+                                                                                        </attributes>
+                                                                                    </fragment>
+                                                                                    <fragment content="아요#내꿈은">
+                                                                                        <attributes>
+                                                                                            <font key="NSFont" size="11" name="AppleSDGothicNeo-Bold"/>
+                                                                                        </attributes>
+                                                                                    </fragment>
+                                                                                    <fragment>
+                                                                                        <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                                                                        <attributes>
+                                                                                            <font key="NSFont" size="11" name="NotoSansMyanmar-Bold"/>
+                                                                                        </attributes>
+                                                                                    </fragment>
+                                                                                    <fragment content="#">
+                                                                                        <attributes>
+                                                                                            <font key="NSFont" size="11" name="LucidaGrande-Bold"/>
+                                                                                        </attributes>
+                                                                                    </fragment>
+                                                                                    <fragment content="사과농장#ENFP">
+                                                                                        <attributes>
+                                                                                            <font key="NSFont" size="11" name="AppleSDGothicNeo-Bold"/>
+                                                                                        </attributes>
+                                                                                    </fragment>
+                                                                                </attributedString>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                        </subviews>
+                                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="bottom" secondItem="41h-IQ-mr0" secondAttribute="bottom" constant="28" id="8mR-z3-pqo"/>
+                                                                            <constraint firstItem="41h-IQ-mr0" firstAttribute="leading" secondItem="Q0F-0W-ABO" secondAttribute="leading" constant="7" id="UyM-Bm-xvg"/>
+                                                                            <constraint firstItem="41h-IQ-mr0" firstAttribute="centerX" secondItem="Q0F-0W-ABO" secondAttribute="centerX" id="jOa-MY-XJv"/>
+                                                                        </constraints>
+                                                                    </view>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="이주혁" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eMP-KR-Y6s">
+                                                                        <rect key="frame" x="15" y="134.5" width="31.5" height="18"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="height" constant="18" id="Vg9-bc-TgU"/>
+                                                                        </constraints>
+                                                                        <fontDescription key="fontDescription" name="NotoSansMyanmar-Bold" family="Noto Sans Myanmar" pointSize="12"/>
+                                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="trailing" secondItem="Q0F-0W-ABO" secondAttribute="trailing" id="7ll-9I-XvO"/>
+                                                                    <constraint firstItem="tHt-Q6-BgL" firstAttribute="height" secondItem="Q0F-0W-ABO" secondAttribute="height" multiplier="2:1" id="8Tr-iL-iw2"/>
+                                                                    <constraint firstItem="tHt-Q6-BgL" firstAttribute="leading" secondItem="GrR-F6-c2u" secondAttribute="leading" id="BoG-oO-5wg"/>
+                                                                    <constraint firstItem="Q0F-0W-ABO" firstAttribute="leading" secondItem="GrR-F6-c2u" secondAttribute="leading" id="G8y-C5-8QA"/>
+                                                                    <constraint firstItem="Q0F-0W-ABO" firstAttribute="top" secondItem="tHt-Q6-BgL" secondAttribute="bottom" id="J1N-P7-ESA"/>
+                                                                    <constraint firstItem="eMP-KR-Y6s" firstAttribute="leading" secondItem="GrR-F6-c2u" secondAttribute="leading" constant="15" id="MkK-3c-L79"/>
+                                                                    <constraint firstItem="Q0F-0W-ABO" firstAttribute="top" secondItem="eMP-KR-Y6s" secondAttribute="bottom" constant="17" id="NGi-ZC-Bsg"/>
+                                                                    <constraint firstItem="eMP-KR-Y6s" firstAttribute="leading" secondItem="pIS-7a-6Hn" secondAttribute="leading" id="TiZ-es-yld"/>
+                                                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="eMP-KR-Y6s" secondAttribute="trailing" constant="20" symbolic="YES" id="Ys7-b7-PUz"/>
+                                                                    <constraint firstItem="pIS-7a-6Hn" firstAttribute="top" secondItem="eMP-KR-Y6s" secondAttribute="bottom" id="bxG-LS-8UK"/>
+                                                                    <constraint firstAttribute="trailing" secondItem="tHt-Q6-BgL" secondAttribute="trailing" id="gVL-I6-v00"/>
+                                                                    <constraint firstItem="tHt-Q6-BgL" firstAttribute="top" secondItem="GrR-F6-c2u" secondAttribute="top" id="kWK-RZ-5Y6"/>
+                                                                    <constraint firstAttribute="bottom" secondItem="Q0F-0W-ABO" secondAttribute="bottom" id="oJC-qw-f1F"/>
+                                                                </constraints>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Wm-rH-tbi">
+                                                                <rect key="frame" x="196.5" y="0.0" width="169.5" height="254.5"/>
+                                                                <subviews>
+                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="juhyeok" translatesAutoresizingMaskIntoConstraints="NO" id="a60-gG-6Bv">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="169.5" height="169.5"/>
+                                                                    </imageView>
+                                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dRS-kk-lQk">
+                                                                        <rect key="frame" x="15" y="152.5" width="65" height="4"/>
+                                                                        <color key="backgroundColor" name="marigold"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="width" constant="65" id="Gio-y4-kuc"/>
+                                                                            <constraint firstAttribute="height" constant="4" id="fK3-73-88r"/>
+                                                                        </constraints>
+                                                                    </view>
+                                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Eur-Vx-5PP">
+                                                                        <rect key="frame" x="0.0" y="169.5" width="169.5" height="85"/>
+                                                                        <subviews>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AFX-8S-9Kl">
+                                                                                <rect key="frame" x="7" y="29" width="155.5" height="28"/>
+                                                                                <attributedString key="attributedText">
+                                                                                    <fragment content="#hereis#">
+                                                                                        <attributes>
+                                                                                            <font key="NSFont" size="11" name="LucidaGrande-Bold"/>
+                                                                                        </attributes>
+                                                                                    </fragment>
+                                                                                    <fragment content="아요#내꿈은">
+                                                                                        <attributes>
+                                                                                            <font key="NSFont" size="11" name="AppleSDGothicNeo-Bold"/>
+                                                                                        </attributes>
+                                                                                    </fragment>
+                                                                                    <fragment>
+                                                                                        <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                                                                        <attributes>
+                                                                                            <font key="NSFont" size="11" name="NotoSansMyanmar-Bold"/>
+                                                                                        </attributes>
+                                                                                    </fragment>
+                                                                                    <fragment content="#">
+                                                                                        <attributes>
+                                                                                            <font key="NSFont" size="11" name="LucidaGrande-Bold"/>
+                                                                                        </attributes>
+                                                                                    </fragment>
+                                                                                    <fragment content="사과농장#ENFP">
+                                                                                        <attributes>
+                                                                                            <font key="NSFont" size="11" name="AppleSDGothicNeo-Bold"/>
+                                                                                        </attributes>
+                                                                                    </fragment>
+                                                                                </attributedString>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                        </subviews>
+                                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                                        <constraints>
+                                                                            <constraint firstItem="AFX-8S-9Kl" firstAttribute="centerX" secondItem="Eur-Vx-5PP" secondAttribute="centerX" id="XDE-Iz-hVA"/>
+                                                                            <constraint firstAttribute="bottom" secondItem="AFX-8S-9Kl" secondAttribute="bottom" constant="28" id="dFE-x9-eEd"/>
+                                                                            <constraint firstItem="AFX-8S-9Kl" firstAttribute="leading" secondItem="Eur-Vx-5PP" secondAttribute="leading" constant="7" id="yee-q8-cVv"/>
+                                                                        </constraints>
+                                                                    </view>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="이주혁" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fPa-np-Ka3">
+                                                                        <rect key="frame" x="15" y="134.5" width="31.5" height="18"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="height" constant="18" id="93h-Lv-LTb"/>
+                                                                        </constraints>
+                                                                        <fontDescription key="fontDescription" name="NotoSansMyanmar-Bold" family="Noto Sans Myanmar" pointSize="12"/>
+                                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                                <constraints>
+                                                                    <constraint firstItem="dRS-kk-lQk" firstAttribute="top" secondItem="fPa-np-Ka3" secondAttribute="bottom" id="0be-E7-oUx"/>
+                                                                    <constraint firstItem="Eur-Vx-5PP" firstAttribute="top" secondItem="a60-gG-6Bv" secondAttribute="bottom" id="6i9-Qm-hxV"/>
+                                                                    <constraint firstItem="a60-gG-6Bv" firstAttribute="height" secondItem="Eur-Vx-5PP" secondAttribute="height" multiplier="2:1" id="EX7-r9-FJ5"/>
+                                                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="fPa-np-Ka3" secondAttribute="trailing" constant="20" symbolic="YES" id="IFU-78-Kao"/>
+                                                                    <constraint firstAttribute="bottom" secondItem="Eur-Vx-5PP" secondAttribute="bottom" id="MkZ-JW-Uka"/>
+                                                                    <constraint firstItem="Eur-Vx-5PP" firstAttribute="leading" secondItem="7Wm-rH-tbi" secondAttribute="leading" id="R4L-LU-B8f"/>
+                                                                    <constraint firstItem="Eur-Vx-5PP" firstAttribute="top" secondItem="fPa-np-Ka3" secondAttribute="bottom" constant="17" id="Xfb-8V-YzJ"/>
+                                                                    <constraint firstItem="a60-gG-6Bv" firstAttribute="top" secondItem="7Wm-rH-tbi" secondAttribute="top" id="ZCh-Ce-ehI"/>
+                                                                    <constraint firstAttribute="trailing" secondItem="Eur-Vx-5PP" secondAttribute="trailing" id="cGG-qJ-XcH"/>
+                                                                    <constraint firstAttribute="trailing" secondItem="a60-gG-6Bv" secondAttribute="trailing" id="fsx-S3-CiH"/>
+                                                                    <constraint firstItem="fPa-np-Ka3" firstAttribute="leading" secondItem="7Wm-rH-tbi" secondAttribute="leading" constant="15" id="gKT-SJ-Rgh"/>
+                                                                    <constraint firstItem="fPa-np-Ka3" firstAttribute="leading" secondItem="dRS-kk-lQk" secondAttribute="leading" id="pCB-nv-DoK"/>
+                                                                    <constraint firstItem="a60-gG-6Bv" firstAttribute="leading" secondItem="7Wm-rH-tbi" secondAttribute="leading" id="tlg-qc-GTy"/>
+                                                                </constraints>
+                                                            </view>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="TYV-F0-Eu1" firstAttribute="top" secondItem="BV2-a8-aKa" secondAttribute="top" id="Jb1-5N-FNy"/>
+                                            <constraint firstAttribute="trailing" secondItem="KJl-5m-nvi" secondAttribute="trailing" constant="24" id="QHC-ou-CqA"/>
+                                            <constraint firstItem="KJl-5m-nvi" firstAttribute="leading" secondItem="BV2-a8-aKa" secondAttribute="leading" constant="24" id="Uxz-HN-oYv"/>
+                                            <constraint firstItem="KJl-5m-nvi" firstAttribute="centerX" secondItem="BV2-a8-aKa" secondAttribute="centerX" id="bXf-Tf-z6T"/>
+                                            <constraint firstItem="KJl-5m-nvi" firstAttribute="top" secondItem="TYV-F0-Eu1" secondAttribute="bottom" constant="40" id="cEP-4Y-9kA"/>
+                                            <constraint firstItem="TYV-F0-Eu1" firstAttribute="leading" secondItem="BV2-a8-aKa" secondAttribute="leading" id="meq-mi-jTF"/>
+                                            <constraint firstAttribute="bottom" secondItem="KJl-5m-nvi" secondAttribute="bottom" constant="12" id="rMS-uJ-2iW"/>
+                                            <constraint firstAttribute="trailing" secondItem="TYV-F0-Eu1" secondAttribute="trailing" id="vnQ-mB-O8z"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="BV2-a8-aKa" firstAttribute="leading" secondItem="lEx-hK-VlY" secondAttribute="leading" id="Yrb-f3-TYd"/>
+                                    <constraint firstItem="BV2-a8-aKa" firstAttribute="top" secondItem="lEx-hK-VlY" secondAttribute="top" id="ZwV-Kp-97Q"/>
+                                    <constraint firstAttribute="trailing" secondItem="BV2-a8-aKa" secondAttribute="trailing" id="aMJ-Nq-Den"/>
+                                    <constraint firstAttribute="bottom" secondItem="BV2-a8-aKa" secondAttribute="bottom" id="ek0-ui-j4W"/>
+                                </constraints>
+                            </scrollView>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xqX-9t-i5n">
+                                <rect key="frame" x="349" y="797" width="45" height="45"/>
+                                <color key="backgroundColor" name="marigold"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="B4w-eD-3lQ"/>
+                                    <constraint firstAttribute="width" constant="45" id="dPl-Fu-BVH"/>
+                                </constraints>
+                                <state key="normal" title="TOP">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="goTop:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ahm-Ri-mNS"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="lEx-hK-VlY" secondAttribute="bottom" id="7dC-qQ-Bfe"/>
+                            <constraint firstItem="BV2-a8-aKa" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" priority="750" id="9qs-F0-SHs"/>
+                            <constraint firstItem="hnt-IT-orL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="IyS-xD-YSi"/>
+                            <constraint firstItem="hnt-IT-orL" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="JoM-jJ-png"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="xqX-9t-i5n" secondAttribute="bottom" constant="20" id="Q6n-zh-WA0"/>
+                            <constraint firstItem="lEx-hK-VlY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="U8Q-aJ-h0j"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="lEx-hK-VlY" secondAttribute="trailing" id="aro-Ju-tuG"/>
+                            <constraint firstItem="lEx-hK-VlY" firstAttribute="top" secondItem="hnt-IT-orL" secondAttribute="bottom" id="b0K-Di-58L"/>
+                            <constraint firstItem="BV2-a8-aKa" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="bfr-n6-MS8"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="xqX-9t-i5n" secondAttribute="trailing" constant="20" id="sTl-MU-Ja4"/>
+                            <constraint firstItem="hnt-IT-orL" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="tAc-2o-Red"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="bannerView" destination="TYV-F0-Eu1" id="ojc-T1-gLZ"/>
+                        <outlet property="goTopButton" destination="xqX-9t-i5n" id="AdK-Ms-z6k"/>
+                        <outlet property="profileScrollView" destination="lEx-hK-VlY" id="uUq-7b-Egb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="93.75"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="banner" width="375" height="420"/>
+        <image name="juhyeok" width="150" height="150"/>
+        <image name="soptLogo" width="62" height="23"/>
+        <namedColor name="marigold">
+            <color red="0.98799997568130493" green="0.80400002002716064" blue="0.024000000208616257" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
